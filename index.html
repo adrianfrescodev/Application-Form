@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Application Form</h1>
+    <div class="divider"></div>
+    <p id="description">Thanks for showing interest in joining our company. Please leave your information below and we will reach out to you as soon as we can.</p>
+    <div class="divider"></div>
+    <form id="survey-form">
+    <div class="spaced">
+    <label id="name-label">Applicant first and last name: </label><input id="name" type="text" required placeholder="Bob Jones">
+    </div>
+    <div class="spaced">
+    <label id="email-label">Please provide a email: <input id="email" type="email" placeholder="placemail@temp.com" required></label>
+    </div>
+    <div class="spaced">
+    <label id="number-label">Please provide a phone number for text updates on your application: <input id="number" type="number" min="999999999" max="9999999999" placeholder="1234567891">
+    </div>
+    </label>
+    <div class="spaced">
+    <label>Where did you hear about us?</label>
+    <select id="dropdown">
+        <option>select one:</option>
+        <option>LinkedIn</option>
+        <option>Indeed</option>
+        <option>Careers page</option>
+        <option>other</option>
+    </select>
+    </div>
+    <div class="spaced">
+    <fieldset>
+    <legend>Do you want text updates on the status of your application?</legend>
+    <label for="Yes"><input type="radio" id="Yes" name="texts" value="yes" class ="inline">Yes</label>
+    <label for="No"><input type="radio" id="No" name="texts" value="no" class="inline">No</label>
+    </fieldset>
+    </div>
+    <div class="spaced">
+    <legend>What job postings are you interested in</legend>
+    <label for="AI"><input type="checkbox" id="AI" name="AI" value="AI" class ="inline">AI developer</label>
+    <label for="software"> <input type="checkbox" id="software" name="software" value="software" class ="inline">Software engineer</label>
+    <label for="data"><input type="checkbox" id="data" name="data" value="data" class ="inline">Data engineer</label>
+    </div>
+     <div class="spaced">
+    <legend>Any additional comments?</legend>
+    <textarea></textarea>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
